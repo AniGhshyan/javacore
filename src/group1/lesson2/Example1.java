@@ -1,6 +1,4 @@
-package group1.lesso2;
-
-import java.sql.SQLOutput;
+package group1.lesson2;
 
 public class Example1 {
 
