@@ -44,7 +44,7 @@ public class ArrayUtil {
         System.out.println("Մասիվի կենտ տարրերն են");
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0)
-                System.out.print(array[i] +" ");
+                System.out.print(array[i] + " ");
 
         }
         System.out.println();
@@ -68,11 +68,11 @@ public class ArrayUtil {
         System.out.print(b);
 
         System.out.println();
-        double k = 0;
+        double sum = 0;
         for (int i = 0; i < array.length; i++) {
-            k += array[i];
+            sum += array[i];
         }
-        System.out.println("Միջին թվաբանականը = " + k/ array.length);
+        System.out.println("Միջին թվաբանականը = " + sum / array.length);
     }
 
 }
