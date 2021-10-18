@@ -1,4 +1,55 @@
 package Homeworke;
 
 public class CharArray {
+
+    public static void main(String[] args) {
+
+        char[] bolola = {'b', 'o', 'l', 'o', 'l', 'a'};
+        int a = 0;
+        char c = 'o';
+        for (int i = 0; i < bolola.length; i++) {
+            if (bolola[i] == c) {
+                a++;
+            }
+        }
+        System.out.println("'o' սինվոլի քանակը = " + a);
+
+        for (int i = 0; i < bolola.length; i++) {
+
+        }
+        System.out.println("Մասիվի մեջտեղի 2 սինվոլներն են");
+        System.out.print(bolola[(bolola.length - 1) / 2] + " ");
+        System.out.println(bolola[(bolola.length - 1) / 2 + 1]);
+
+        char y = 'y';
+        boolean k = false;
+        for (int i = 0; i < bolola.length; i++) {
+            if (bolola[bolola.length - 1] == 'y' && bolola[bolola.length - 2] == 'l') {
+                k = true;
+            }
+        }
+        System.out.println(k);
+        char[] babola = {'b', 'a', 'b', 'o', 'l', 'a'};
+        boolean b = false;
+        for (int i = 0; i < babola.length; i++) {
+            if (babola[i] == 'b' && babola[i + 2] == 'b') {
+                b = true;
+            }
+        }
+        System.out.println(b);
+
+        char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
+        for (int i = 0; i < text.length; i++) {
+            if (text[i] == ' ') {
+
+            }
+
+            System.out.print(text[i] + " ");
+        }
+
+    }
+
+
 }
+
+
