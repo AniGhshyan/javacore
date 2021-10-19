@@ -47,14 +47,10 @@ public class CharArray {
         }
         char[] result = new char[text.length - l];
         for (int i = 0; i < text.length; i++) {
-            if (text[i] == ' ') {
-
+            if (text[i] != ' ') {
+                System.out.print(text[i] + " ");
             }
-
-            System.out.print(text[i] + " ");
         }
-
-
     }
 }
 
