@@ -1,4 +1,4 @@
-package Homeworke.arrayutil;
+package Homework.arrayutil;
 
 public class ArrayUtil {
 

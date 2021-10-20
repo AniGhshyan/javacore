@@ -1,4 +1,4 @@
-package Homeworke;
+package Homework;
 
 public class CharArray {
 
@@ -14,14 +14,10 @@ public class CharArray {
         }
         System.out.println("'o' սինվոլի քանակը = " + a);
 
-        for (int i = 0; i < bolola.length; i++) {
-
-        }
         System.out.println("Մասիվի մեջտեղի 2 սինվոլներն են");
         System.out.print(bolola[(bolola.length - 1) / 2] + " ");
         System.out.println(bolola[(bolola.length - 1) / 2 + 1]);
 
-        char y = 'y';
         boolean k = false;
         for (int i = 0; i < bolola.length; i++) {
             if (bolola[bolola.length - 1] == 'y' && bolola[bolola.length - 2] == 'l') {
@@ -31,7 +27,7 @@ public class CharArray {
         System.out.println(k);
         char[] babola = {'b', 'a', 'b', 'o', 'l', 'a'};
         boolean b = false;
-        for (int i = 0; i < babola.length; i++) {
+        for (int i = 0; i < babola.length - 2; i++) {
             if (babola[i] == 'b' && babola[i + 2] == 'b') {
                 b = true;
             }
