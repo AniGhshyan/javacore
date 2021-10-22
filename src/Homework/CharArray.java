@@ -5,17 +5,17 @@ public class CharArray {
     public static void main(String[] args) {
 
         char[] bolola = {'b', 'o', 'l', 'o', 'l', 'a'};
-        int a = 0;
+        int num = 0;
         char c = 'o';
         for (int i = 0; i < bolola.length; i++) {
             if (bolola[i] == c) {
-                a++;
+                num++;
             }
         }
-        System.out.println("'o' սինվոլի քանակը = " + a);
+        System.out.println("1. 'o' սինվոլի քանակը = " + num);
 
-        System.out.println("Մասիվի մեջտեղի 2 սինվոլներն են");
-        System.out.print(bolola[(bolola.length - 1) / 2] + " ");
+        System.out.println("2. Մասիվի մեջտեղի 2 սինվոլներն են");
+        System.out.print("    " + bolola[(bolola.length - 1) / 2] + " ");
         System.out.println(bolola[(bolola.length - 1) / 2 + 1]);
 
         boolean k = false;
@@ -24,27 +24,30 @@ public class CharArray {
                 k = true;
             }
         }
-        System.out.println(k);
+        System.out.println("3. " + k);
         char[] babola = {'b', 'a', 'b', 'o', 'l', 'a'};
-        boolean b = false;
+        boolean bob = false;
         for (int i = 0; i < babola.length - 2; i++) {
             if (babola[i] == 'b' && babola[i + 2] == 'b') {
-                b = true;
+                bob = true;
             }
         }
-        System.out.println(b);
+        System.out.println("4. " + bob);
         char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
-        int l = 0;
+        int a = 0;
+        int b = 0;
         for (int i = 0; i < text.length; i++) {
-            if (text[i] == ' ') {
-                l++;
-            }
+            if (text[i] != ' ') break;
+            a++;
         }
-        char[] result = new char[text.length - l];
-        for (int i = 0; i < text.length; i++) {
-            if (text[i] != ' ') {
-                System.out.print(text[i] + " ");
-            }
+        for (int i = text.length; i < 0; i--) {
+            if (text[i] != ' ') break;
+            b++;
+        }
+        char[] result = new char[text.length - (a + b)];
+        for (int i = a; i < text.length - (a + b); i++) {
+            result[i] = text[i];
+            System.out.print("5." + result[i] + " ");
         }
     }
 }
